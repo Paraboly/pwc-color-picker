@@ -12,13 +12,23 @@
     <script nomodule src="/build/pwc-color-picker.js"></script>
   </head>
   <body>
-    <color-picker></color-picker>
+    <color-picker
+      colors='["#951955","#130394","#444444","#989898", "#101516"]'
+    ></color-picker>
 
     <script>
       const component = document.querySelector("color-picker");
       component.addEventListener("colorPickedEvent", event => {
         console.log("Event: ", event.detail);
       });
+
+      component.colors = [
+        "#989898",
+        "#101516",
+        "#951955",
+        "#130394",
+        "#444444"
+      ];
     </script>
   </body>
 </html>
