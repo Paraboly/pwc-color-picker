@@ -20,10 +20,10 @@ export class ColorPicker {
   render() {
     return this.colors.map(color => (
       <button
-        style={{ backgroundColor: color }}
         class="colorCell"
+        style={{ backgroundColor: color }}
         onClick={() => this.handleClick(color)}
-      ></button>
+      />
     ));
   }
 }
