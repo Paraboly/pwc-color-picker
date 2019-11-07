@@ -3,8 +3,8 @@
   height: 20px;
   margin: 4px;
   opacity: 0.7;
+  cursor: pointer;
+  border-radius: 75%;
   display: inline-block;
   border: 2px solid darkslategrey;
-  border-radius: 75%;
-  cursor: pointer;
 }
