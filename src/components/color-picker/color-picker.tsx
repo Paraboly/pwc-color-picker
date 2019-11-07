@@ -11,10 +11,19 @@ export class ColorPicker {
   })
   onChange: EventEmitter;
 
-  @Prop() colors: string[] = ["red", "#232345", "#458596"];
+  @Prop() colors: any = ["red", "#232345", "#458596"];
+
+  componentDidLoad() {
+    this.handleJSXColors();
+  }
 
   handleClick = color => {
     this.onChange.emit(color);
+  };
+
+  handleJSXColors = () => {
+    this.colors =
+      typeof this.colors === "string" ? JSON.parse(this.colors) : this.colors;
   };
 
   render() {

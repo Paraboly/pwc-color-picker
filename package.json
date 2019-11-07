@@ -1,6 +1,6 @@
 {
-  "name": "pwc-color-picker",
-  "version": "0.0.1",
+  "name": "@paraboly/pwc-color-picker",
+  "version": "0.0.2",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -10,6 +10,7 @@
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/pwc-color-picker/pwc-color-picker.js",
+  "repository": "https://github.com/Paraboly/pwc-color-picker",
   "files": [
     "dist/",
     "loader/"
