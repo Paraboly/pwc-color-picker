@@ -2,15 +2,12 @@
 
 <img alt="WebComponent PWC Color Picker" src="assets/logo.png" width="1050"/>
 
-
 [![Fully customizable color-picker web component with StencilJS via Paraboly](https://img.shields.io/badge/-Fully%20customizable%20animated--checkbox%20web%20component%20with%20StencilJS%20via%20Paraboly-lightgrey?style=for-the-badge)](https://github.com/Paraboly/pwc-color-picker)
-
 
 [![npm version](https://img.shields.io/npm/v/@paraboly/pwc-color-picker.svg?style=for-the-badge)](https://www.npmjs.com/package/@paraboly/pwc-color-picker)
 [![npm](https://img.shields.io/npm/dt/@paraboly/pwc-color-picker.svg?style=for-the-badge)](https://www.npmjs.com/package/@paraboly/pwc-color-picker)
 ![Platform - Platform Free Web](https://img.shields.io/badge/-Web%20%7C%20Platform%20Free-blue?style=for-the-badge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-
 
 ## Basic color-picker Screenshots
 
@@ -25,25 +22,32 @@
 
 ### Script tag
 
-- Put a script tag similar to this `<script	type="module" src="https://unpkg.com/@paraboly/pwc-color-picker@latest/dist/pwc-color-picker/pwc-color-picker.esm.js"></script>` in the head of your index.html
+- Put a script tag similar to this `<script type="module" src="https://unpkg.com/@paraboly/pwc-color-picker@latest/dist/pwc-color-picker/pwc-color-picker.esm.js"></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
+
 - Run `npm install @paraboly/pwc-color-picker --save`
 - Put a script tag similar to this `<script src='node_modules/@paraboly/pwc-color-picker/dist/pwc-color-picker.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### In a stencil-starter app
+
 - Run `npm install @paraboly/pwc-color-picker --save`
 - Add an import to the npm packages `import @paraboly/pwc-color-picker;`
 - Then you can use the element anywhere in your template, JSX, html etc
 
+## Color Picker Gif
+
+<p align="center">
+  <img alt="WebComponent PWC ColorPicker" src="./color-picker-gif.gif" width="40%" height="40%" />
+</p>
 
 # Usage
 
 ```html
 <color-picker
-    colors='["#951955","#130394","#444444","#989898", "#101516"]'
+  colors='["#951955","#130394","#444444","#989898", "#101516"]'
 ></color-picker>
 ```
 
@@ -52,18 +56,13 @@
 ### JS Way
 
 Also you can put this code into your html inside script tags. You can check the example as index.html
+
 ```js
 const component = document.querySelector("color-picker");
 component.addEventListener("colorPickedEvent", event => {
-   console.log("Event: ", event.detail);
+  console.log("Event: ", event.detail);
 });
-component.colors = [
-   "#989898",
-   "#101516",
-   "#951955",
-   "#130394",
-   "#444444"
-];
+component.colors = ["#989898", "#101516", "#951955", "#130394", "#444444"];
 ```
 
 ## Authors
