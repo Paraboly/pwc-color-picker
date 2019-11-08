@@ -15,7 +15,7 @@
   <img alt="WebComponent PWC Color Picker" src="assets/Screenshots/example.gif" />
 </p>
 
-## [Live Codepen Example](your-code-pen-url-is-here)
+## [Live Codepen Example](https://codepen.io/wrathchaos/pen/qBBKOZz)
 
 ## Installation
 
