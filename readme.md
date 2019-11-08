@@ -40,7 +40,7 @@
 ## Color Picker Gif
 
 <p align="center">
-  <img alt="WebComponent PWC ColorPicker" src="./color-picker-gif.gif" width="40%" height="40%" />
+  <img alt="WebComponent PWC Color Picker" src="./color-picker-gif.gif" width="40%" height="40%" />
 </p>
 
 # Usage
