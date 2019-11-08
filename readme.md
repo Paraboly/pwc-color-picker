@@ -37,7 +37,7 @@
 - Add an import to the npm packages `import @paraboly/pwc-color-picker;`
 - Then you can use the element anywhere in your template, JSX, html etc
 
-## Color Picker Gif :
+## Color Picker Gif:
 
 <p align="center">
   <img alt="WebComponent PWC Color Picker" src="./color-picker-gif.gif" width="40%" height="40%" />
