@@ -11,22 +11,53 @@
     <script type="module" src="/build/pwc-color-picker.esm.js"></script>
     <script nomodule src="/build/pwc-color-picker.js"></script>
   </head>
+  <style>
+    /* -------------------------------------------------------------------------- */
+    /*                                 Card Style                                 */
+    /* -------------------------------------------------------------------------- */
+    .card-style {
+      width: 90%;
+      height: 75px;
+      display: flex;
+      color: inherit;
+      margin: 0 auto;
+      margin-top: 24px;
+      padding: 6px 12px;
+      border-radius: 8px;
+      background-image: none;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: white;
+      box-shadow: 0 1px 12px rgba(0, 0, 0, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      transition: border-color 0.15s ease-in-out 0s,
+        box-shadow 0.15s ease-in-out 0s;
+    }
+
+    body {
+      background-color: #750d37;
+    }
+  </style>
   <body>
-    <div>
+    <div class="card-style">
+      <label style="margin-left: 32px; margin-right: 32px; color: #38405F"
+        >Color Picker to Change Background Color Dynamically:
+      </label>
       <color-picker
-        colors='["#951955","#130394","#ff7f00","#989898", "#52d2f2"]'
+        colors='["#750D37","#38405F","#ee6123","#9A8873", "#66999B"]'
       ></color-picker>
     </div>
 
     <script>
       const component = document.querySelector("color-picker");
-      const frame = document.querySelector("div");
+      const body = document.querySelector("body");
       component.addEventListener("colorPickedEvent", event => {
         console.log("Event: ", event.detail);
-        frame.style.backgroundColor = event.detail;
+        body.style.backgroundColor = event.detail;
       });
       component.colors = [
-        "#989898",
+        "#754043",
         "#52d2f2",
         "#951955",
         "#130394",

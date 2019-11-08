@@ -9,11 +9,10 @@
 ![Platform - Platform Free Web](https://img.shields.io/badge/-Web%20%7C%20Platform%20Free-blue?style=for-the-badge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-## Basic color-picker Screenshots
+## Basic Color Picker Use-Case Screenshot
 
 <p align="center">
-  <img alt="WebComponent PWC Color Picker" src="assets/example.gif" width="49%" />
-  <img alt="WebComponent PWC Color Picker" src="assets/example.png" width="49%" />
+  <img alt="WebComponent PWC Color Picker" src="assets/Screenshots/example.gif" />
 </p>
 
 ## [Live Codepen Example](your-code-pen-url-is-here)
@@ -37,12 +36,6 @@
 - Add an import to the npm packages `import @paraboly/pwc-color-picker;`
 - Then you can use the element anywhere in your template, JSX, html etc
 
-## Color Picker Gif:
-
-<p align="center">
-  <img alt="WebComponent PWC Color Picker" src="./color-picker-gif.gif" width="40%" height="40%" />
-</p>
-
 # Usage
 
 ```html
@@ -64,6 +57,10 @@ component.addEventListener("colorPickedEvent", event => {
 });
 component.colors = ["#989898", "#101516", "#951955", "#130394", "#444444"];
 ```
+
+# Future Plans
+
+- [ ] Example: Change the background color with animation
 
 ## Authors
 
