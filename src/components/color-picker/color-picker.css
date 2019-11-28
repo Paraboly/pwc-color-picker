@@ -6,5 +6,100 @@
   cursor: pointer;
   border-radius: 75%;
   display: inline-block;
-  border: 2px solid darkslategrey;
+  border: 0px solid #eaeaea;
+}
+/*
+.colorCell:hover {
+  box-shadow: 0 0 7px red;
+  -moz-box-shadow: 0 0 7px red;
+  -webkit-box-shadow: 0 0 7px red;
+  -o-box-shadow: 0 0 7px red;
+}
+*/
+/*
+.hover {
+  -webkit-box-shadow: 0 0 4px 6px black;
+  -moz-box-shadow: 0 0 4px 6px black;
+  box-shadow: 0 0 4px 6px black;
+}
+*/
+
+.color-picker {
+  border-radius: 100px;
+}
+/*
+.pickr .pcr-button {
+  border-radius: 100px;
+}
+
+.pickr .pcr-button:after,
+.pickr .pcr-button:before {
+  border-radius: 100px;
+}
+*/
+
+.colors {
+  -webkit-appearance: none;
+  margin: 4px;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+}
+.colors::-webkit-color-swatch {
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+}
+.colors::-webkit-color-swatch-wrapper {
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.active {
+  /*border-width: 1.5px;*/
+  width: 23px;
+  height: 23px;
+  border: 2px solid rgb(173, 189, 209);
+
+  /*
+  animation: colorchange 2s;
+  animation-iteration-count: infinite;
+  */
+}
+
+.icon {
+  position: relative;
+  left: -24px;
+  top: -3px;
+  pointer-events: none;
+}
+/*
+@keyframes colorchange {
+  0% {
+    border: 3px solid rgb(151, 156, 162);
+  }
+  50% {
+    border: 3px solid rgb(255, 255, 255);
+  }
+  100% {
+    border: 3px solid rgb(151, 156, 162);
+  }
+}
+*/
+
+/*
+div {
+  height: 75px;
+}
+*/
+.palette {
+  width: 25px;
+  height: 25px;
+  opacity: 0.7;
+  cursor: pointer;
+  border-radius: 75%;
+  display: inline-block;
 }
