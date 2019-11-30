@@ -1,12 +1,4 @@
-import {
-  Component,
-  Prop,
-  h,
-  State,
-  Event,
-  EventEmitter,
-  Watch
-} from "@stencil/core";
+import { Component, Prop, h, State, Event, EventEmitter } from "@stencil/core";
 
 @Component({
   tag: "color-picker",
@@ -27,6 +19,8 @@ export class ColorPicker {
 
   @Prop() inputValue: string;
 
+  @Prop({ mutable: true, reflect: true }) activeColor: string;
+
   componentDidLoad() {
     this.handleJSXColors();
   }
@@ -37,20 +31,12 @@ export class ColorPicker {
   };
 
   fetch = ev => {
-    this.selectedOne = -1;
+    this.selectedOne = -2;
     this.inputValue = ev.target.value;
     this.onChange.emit(this.inputValue);
+    this.activeColor = this.inputValue;
   };
-  /*
-  toggleHover = () => {
-    this.hovered = !this.hovered;
-  };
-  */
-  /*
-  paletteClick = () => {
-    this.onChangePalette.emit();
-  };
-  */
+
   handleJSXColors = () => {
     this.colors =
       typeof this.colors === "string" ? JSON.parse(this.colors) : this.colors;
@@ -75,9 +61,8 @@ export class ColorPicker {
         ))}
         <input
           type="color"
-          id="get"
-          class="colors"
-          value={this.inputValue}
+          class={this.selectedOne === -2 ? "paletteActive colors" : "colors"}
+          value={this.activeColor}
           onChange={this.fetch.bind(this)}
         />
         <i class="icon">🖌</i>
