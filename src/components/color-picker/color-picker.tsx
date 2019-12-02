@@ -28,6 +28,7 @@ export class ColorPicker {
   handleClick = (color, index) => {
     this.onChange.emit(color);
     this.selectedOne = index;
+    this.activeColor = color;
   };
 
   fetch = ev => {
@@ -51,7 +52,9 @@ export class ColorPicker {
           <button
             name="button"
             class={
-              this.selectedOne === index ? "active colorCell" : "colorCell"
+              this.selectedOne === index || this.activeColor === color
+                ? "active colorCell"
+                : "colorCell"
             }
             style={{
               backgroundColor: color
