@@ -7,9 +7,11 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type  | Default                         |
-| -------- | --------- | ----------- | ----- | ------------------------------- |
-| `colors` | `colors`  |             | `any` | `["red", "#232345", "#458596"]` |
+| Property      | Attribute      | Description | Type     | Default                         |
+| ------------- | -------------- | ----------- | -------- | ------------------------------- |
+| `activeColor` | `active-color` |             | `string` | `undefined`                     |
+| `colors`      | `colors`       |             | `any`    | `["red", "#232345", "#458596"]` |
+| `inputValue`  | `input-value`  |             | `string` | `undefined`                     |
 
 
 ## Events
