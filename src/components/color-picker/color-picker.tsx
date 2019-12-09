@@ -26,16 +26,16 @@ export class ColorPicker {
   }
 
   handleClick = (color, index) => {
-    this.onChange.emit(color);
     this.selectedOne = index;
     this.activeColor = color;
+    this.onChange.emit(color);
   };
 
   fetch = ev => {
     this.selectedOne = -2;
     this.inputValue = ev.target.value;
-    this.onChange.emit(this.inputValue);
     this.activeColor = this.inputValue;
+    this.onChange.emit(this.inputValue);
   };
 
   handleJSXColors = () => {
