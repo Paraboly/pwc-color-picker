@@ -12,11 +12,11 @@
 ## Basic color-picker Screenshots
 
 <p align="center">
-  <img alt="WebComponent PWC Color Picker" src="assets/example.gif" width="49%" />
-  <img alt="WebComponent PWC Color Picker" src="assets/example.png" width="49%" />
+  <img alt="WebComponent PWC Color Picker" src="assets/pwc-color3.png" width="49%" />
+  <img alt="WebComponent PWC Color Picker" src="assets/pwc-color4.png" width="49%" />
 </p>
 
-## [Live Codepen Example](your-code-pen-url-is-here)
+## [Live Codepen Example](https://codepen.io/sevvaleygul0/pen/xxbbKgb)
 
 ## Installation
 
