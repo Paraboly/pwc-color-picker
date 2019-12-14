@@ -12,11 +12,11 @@
 ## Basic color-picker Screenshots
 
 <p align="center">
-  <img alt="WebComponent PWC Color Picker" src="assets/example.gif" width="49%" />
-  <img alt="WebComponent PWC Color Picker" src="assets/example.png" width="49%" />
+  <img alt="WebComponent PWC Color Picker" src="assets/pwc-color3.png" width="49%" />
+  <img alt="WebComponent PWC Color Picker" src="assets/pwc-color4.png" width="49%" />
 </p>
 
-## [Live Codepen Example](your-code-pen-url-is-here)
+## [Live Codepen Example](https://codepen.io/sevvaleygul0/pen/xxbbKgb)
 
 ## Installation
 
@@ -36,12 +36,6 @@
 - Run `npm install @paraboly/pwc-color-picker --save`
 - Add an import to the npm packages `import @paraboly/pwc-color-picker;`
 - Then you can use the element anywhere in your template, JSX, html etc
-
-## Color Picker Gif:
-
-<p align="center">
-  <img alt="WebComponent PWC Color Picker" src="./color-picker-gif.gif" width="40%" height="40%" />
-</p>
 
 # Usage
 
