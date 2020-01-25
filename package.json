@@ -1,6 +1,6 @@
 {
   "name": "@paraboly/pwc-color-picker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fully customizable color-picker web component with StencilJS via Paraboly",
   "keywords": [
     "paraboly",
