@@ -1,8 +1,8 @@
 import { Component, Prop, h, State, Event, EventEmitter } from "@stencil/core";
 
 @Component({
-  tag: "color-picker",
-  styleUrl: "color-picker.css",
+  tag: "pwc-color-picker",
+  styleUrl: "pwc-color-picker.css",
   shadow: false
 })
 export class ColorPicker {
@@ -46,30 +46,28 @@ export class ColorPicker {
   render() {
     const colors =
       typeof this.colors === "string" ? JSON.parse(this.colors) : this.colors;
-    return (
-      <span>
-        {colors.map((color, index) => (
-          <button
-            name="button"
-            class={
-              this.selectedOne === index || this.activeColor === color
-                ? "active colorCell"
-                : "colorCell"
-            }
-            style={{
-              backgroundColor: color
-            }}
-            onClick={() => this.handleClick(color, index)}
-          />
-        ))}
-        <input
-          type="color"
-          class={this.selectedOne === -2 ? "paletteActive colors" : "colors"}
-          value={this.activeColor}
-          onChange={this.fetch.bind(this)}
+    return [
+      colors.map((color, index) => (
+        <button
+          name="button"
+          class={
+            this.selectedOne === index || this.activeColor === color
+              ? "active colorCell"
+              : "colorCell"
+          }
+          style={{
+            backgroundColor: color
+          }}
+          onClick={() => this.handleClick(color, index)}
         />
-        <i class="icon">🖌</i>
-      </span>
-    );
+      )),
+      <input
+        type="color"
+        class={this.selectedOne === -2 ? "paletteActive colors" : "colors"}
+        value={this.activeColor}
+        onChange={this.fetch.bind(this)}
+      />,
+      <i class="icon">🖌</i>
+    ];
   }
 }

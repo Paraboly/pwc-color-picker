@@ -2,14 +2,14 @@
 
 <img alt="WebComponent PWC Color Picker" src="assets/logo.png" width="1050"/>
 
-[![Fully customizable color-picker web component with StencilJS via Paraboly](https://img.shields.io/badge/-Fully%20customizable%20animated--checkbox%20web%20component%20with%20StencilJS%20via%20Paraboly-lightgrey?style=for-the-badge)](https://github.com/Paraboly/pwc-color-picker)
+[![Fully customizable pwc-color-picker web component with StencilJS via Paraboly](https://img.shields.io/badge/-Fully%20customizable%20animated--checkbox%20web%20component%20with%20StencilJS%20via%20Paraboly-lightgrey?style=for-the-badge)](https://github.com/Paraboly/pwc-color-picker)
 
 [![npm version](https://img.shields.io/npm/v/@paraboly/pwc-color-picker.svg?style=for-the-badge)](https://www.npmjs.com/package/@paraboly/pwc-color-picker)
 [![npm](https://img.shields.io/npm/dt/@paraboly/pwc-color-picker.svg?style=for-the-badge)](https://www.npmjs.com/package/@paraboly/pwc-color-picker)
 ![Platform - Platform Free Web](https://img.shields.io/badge/-Web%20%7C%20Platform%20Free-blue?style=for-the-badge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-## Basic color-picker Screenshots
+## Basic pwc-color-picker Screenshots
 
 <p align="center">
   <img alt="WebComponent PWC Color Picker" src="assets/pwc-color3.png" width="49%" />
@@ -40,9 +40,9 @@
 # Usage
 
 ```html
-<color-picker
+<pwc-color-picker
   colors='["#951955","#130394","#444444","#989898", "#101516"]'
-></color-picker>
+></pwc-color-picker>
 ```
 
 ## Checkbox onCheckChange Listener Usage
@@ -52,7 +52,7 @@
 Also you can put this code into your html inside script tags. You can check the example as index.html
 
 ```js
-const component = document.querySelector("color-picker");
+const component = document.querySelector("pwc-color-picker");
 component.addEventListener("colorPickedEvent", event => {
   console.log("Event: ", event.detail);
 });

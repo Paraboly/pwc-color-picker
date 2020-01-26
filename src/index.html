@@ -10,17 +10,24 @@
 
     <script type="module" src="/build/pwc-color-picker.esm.js"></script>
     <script nomodule src="/build/pwc-color-picker.js"></script>
+
+    <style>
+      #result {
+        text-align: center;
+        margin-top: 25px;
+        width: 200px;
+      }
+    </style>
   </head>
   <body>
-    <div>
-      <color-picker
-        colors='["#951955","#130394","#ff7f00","#989898", "#52d2f2"]'
-      ></color-picker>
-    </div>
+    <pwc-color-picker
+      colors='["#951955","#130394","#ff7f00","#989898", "#52d2f2"]'
+    ></pwc-color-picker>
+    <div id="result">Result</div>
 
     <script>
-      const component = document.querySelector("color-picker");
-      const frame = document.querySelector("div");
+      const component = document.querySelector("pwc-color-picker");
+      const frame = document.querySelector("#result");
       component.addEventListener("colorPickedEvent", event => {
         console.log("event:", event.detail);
         frame.style.backgroundColor = event.detail;

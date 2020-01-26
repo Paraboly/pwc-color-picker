@@ -10,7 +10,7 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-  interface ColorPicker {
+  interface PwcColorPicker {
     'activeColor': string;
     'colors': any;
     'inputValue': string;
@@ -20,18 +20,18 @@ export namespace Components {
 declare global {
 
 
-  interface HTMLColorPickerElement extends Components.ColorPicker, HTMLStencilElement {}
-  var HTMLColorPickerElement: {
-    prototype: HTMLColorPickerElement;
-    new (): HTMLColorPickerElement;
+  interface HTMLPwcColorPickerElement extends Components.PwcColorPicker, HTMLStencilElement {}
+  var HTMLPwcColorPickerElement: {
+    prototype: HTMLPwcColorPickerElement;
+    new (): HTMLPwcColorPickerElement;
   };
   interface HTMLElementTagNameMap {
-    'color-picker': HTMLColorPickerElement;
+    'pwc-color-picker': HTMLPwcColorPickerElement;
   }
 }
 
 declare namespace LocalJSX {
-  interface ColorPicker {
+  interface PwcColorPicker {
     'activeColor'?: string;
     'colors'?: any;
     'inputValue'?: string;
@@ -39,7 +39,7 @@ declare namespace LocalJSX {
   }
 
   interface IntrinsicElements {
-    'color-picker': ColorPicker;
+    'pwc-color-picker': PwcColorPicker;
   }
 }
 
@@ -49,7 +49,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
-      'color-picker': LocalJSX.ColorPicker & JSXBase.HTMLAttributes<HTMLColorPickerElement>;
+      'pwc-color-picker': LocalJSX.PwcColorPicker & JSXBase.HTMLAttributes<HTMLPwcColorPickerElement>;
     }
   }
 }
