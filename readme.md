@@ -16,7 +16,7 @@
   <img alt="WebComponent PWC Color Picker" src="assets/pwc-color4.png" width="49%" />
 </p>
 
-## [Live Codepen Example](https://codepen.io/sevvaleygul0/pen/xxbbKgb)
+## [Live Codepen Example](https://codepen.io/starikcetin/pen/XWJGxqb)
 
 ## Installation
 
