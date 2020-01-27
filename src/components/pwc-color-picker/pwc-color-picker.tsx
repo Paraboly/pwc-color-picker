@@ -49,7 +49,7 @@ export class ColorPicker {
     return [
       colors.map((color, index) => (
         <button
-          name="button"
+          type="button"
           class={
             this.selectedOne === index || this.activeColor === color
               ? "active colorCell"
